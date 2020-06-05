@@ -1,0 +1,140 @@
+body {
+  background: #ffffff;
+  font-family: "Helvetica", "Arial", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  height: auto;
+}
+
+code {
+  font-family: Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.event-card {
+  width: 100%;
+  height: auto;
+  margin: 16px 0 0;
+  display: inline-block;
+  position: relative;
+  background: #ffffff;
+  vertical-align: top;
+}
+@media only screen and (min-width: 600px) {
+  .event-card {
+    max-width: 276px;
+    margin: 40px 2% 0 0;
+  }
+}
+.event-card:focus {
+  outline: 1px dotted #0079bf;
+}
+.event-card__image {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 600px) {
+  .event-card__image {
+    max-width: 276px;
+    max-height: 184px;
+  }
+}
+.event-card__link {
+  text-decoration: none;
+}
+.event-card__link span:hover {
+  background-color: #0079bf;
+  color: #ffffff;
+  text-decoration: none;
+}
+.event-card__link:hover {
+  color: #00598c;
+  background-color: transparent;
+}
+.event-card__link:hover:visited {
+  background-color: #5223b0;
+  color: #5223b0;
+  text-decoration: none;
+}
+.event-card__link:focus span,
+.event-card__link:active span {
+  color: #ffffff;
+  outline: 1px dotted #0079bf;
+  background-color: #003b5c;
+}
+.event-card__title {
+  margin: 24px 24px 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.41rem;
+}
+.event-card .event-card-info {
+  display: block;
+  padding: 8px 24px 24px 24px;
+  background: #ffffff;
+}
+.event-card .event-card-info__date {
+  position: absolute;
+  display: block;
+  max-width: 100px;
+  height: 44px;
+  padding: 6px 12px;
+  background: #ffd100;
+  color: #333;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+}
+.event-card .event-card-info__date .small-block {
+  display: inline-block;
+}
+.event-card .event-card-info__day,
+.event-card .event-card-info__month {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.event-card .event-card-info__number {
+  display: inline-block;
+  font-size: 2rem;
+}
+.event-card .event-card-info__time,
+.event-card .event-card-info__location {
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #666;
+}
+.event-card .event-card-info__time img,
+.event-card .event-card-info__location img {
+  display: inline;
+  margin-bottom: 3px;
+  margin-left: 2px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.event-card .event-card-info__description {
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #333;
+}
+.event-card .event-card-info__description:last-child {
+  margin-bottom: 0px;
+}
+.event-card .event-card-info .tags {
+  position: absolute;
+  bottom: 24px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #005587;
+}
+.event-card:first-child {
+  margin-top: 0px;
+}
+@media only screen and (min-width: 600px) {
+  .event-card:first-child {
+    margin-top: 40px;
+  }
+}
