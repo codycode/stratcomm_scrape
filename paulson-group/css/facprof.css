@@ -447,6 +447,194 @@ footer{
 
 }
 
+.general-information {
+            margin-top: 3rem;
+            align-content: center;
+            
+            }
+        .hover-box {
+            width: 333px;
+            height: 300px;
+            float: left; 
+            display: block;
+            overflow: hidden;
+            position: relative;
+            margin: 0 4px 0 0;
+            background: white;
+            border: 2px solid black;
+            margin-right: 1.5rem;
+            margin-left: 1.5rem;
+            margin-bottom: 3rem;
+            background: #2774AE;
+            color: white;
+            box-shadow: 1px 1px #888888;
+
+            }
+        .hidden-content {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.84rem;
+        }
+
+        .hover-box:hover .left-box1 {
+            top: -250px;
+            }
+        
+        .hover-box:hover .middle-box1 {
+            top: -250px;
+            }
+        
+        .hover-box:hover .right-box1 {
+            top: -250px;
+            }
+        
+        
+        .left-box1 {
+             width: 333px;
+            height: 300px;
+            position: absolute;
+            display: block;
+            -webkit-transition: top .3s ease-in-out;
+            margin-bottom: 3rem;
+            background: url("Hover-left.png") no-repeat;
+            box-shadow: 1px 1px #888888;
+            }
+        
+        .middle-box1 {
+             width: 333px;
+            height: 300px;
+            position: absolute;
+            display: block;
+            -webkit-transition: top .3s ease-in-out;
+            margin-bottom: 3rem;
+            background: url("Hover-middle.png") no-repeat;
+            box-shadow: 1px 1px #888888;
+            }
+            
+        .right-box1 {
+             width: 333px;
+            height: 300px;
+            position: absolute;
+            display: block;
+            -webkit-transition: top .3s ease-in-out;
+            margin-bottom: 3rem;
+            background: url("Hover-right.png") no-repeat;
+            box-shadow: 1px 1px #888888;
+            }
+        
+        .team-left-box{
+             width: 70%;
+             float: left;
+            }
+        
+        .team-right-box{
+             width: 25%;
+             height: auto;
+             float: right;
+             background-color: white;
+             border: 2px solid black;
+             box-shadow: 1px 1px #888888;
+            }
+        .past-group-member-name
+        {
+            font-size: 1rem;
+            color: #2774AE;
+            }
+        
+        a:hover .past-group-member-name {
+    color: #FFD100;
+    font-weight: bolder;
+}
+        .past-group-member
+        {
+            font-size: 1rem;
+            margin-left: 1rem;
+            
+            }
+        
+.team-container {
+  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+}
+
+ .team-container img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+            }
+
+.team-container .pd-button {
+   position: absolute;
+   top: 82%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+   background-color: #FFD100;
+   color: #2774AE;
+   font-size: 20px;
+   padding: 5px 5px;
+   border: none;
+   cursor: pointer;
+   text-align: left;
+   width:100%;
+   font-family: "Helvetica", "Arial", sans-serif;
+            }
+        
+
+.team-container .pd-button:hover {
+background-color: #2774AE;
+color:white;
+}
+        
+.team-container .graduate-button {
+   position: absolute;
+   top: 82%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+   background-color: #2774AE;
+   color: white;
+   font-size: 20px;
+   padding: 5px 5px;
+   border: none;
+   cursor: pointer;
+   text-align: left;
+   width:100%;
+   font-family: "Helvetica", "Arial", sans-serif;
+            }
+        
+
+.team-container .graduate-button:hover {
+background-color: white;
+color:#2774AE;
+}
+            
+            
+    
+.name-button{
+  border: none;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  display: inline;
+  font-size: 20px;
+  cursor: pointer;
+  color: #2774AE;
+  background-color: white;          
+}
+
+.wrapper-team
+        {
+  margin-left: 10%        
+}
+
 @media only screen and (max-width: 1000px)
 {
     .faculty-profile-image{
