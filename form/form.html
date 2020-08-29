@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- -->
+  <!-- Defines primary language as English -->
+    <html lang= en>
+        
+        <!-- Description -->
+    <head>
+            
+            <!-- Document encoding characer set : Multi-lingual Universal Transformation Format -->
+        <meta charset="utf-8">
+        
+         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        
+            <!-- Description of page : max 200char-->
+        <meta name="description" content= "This is the webpage for the Paulson Group at UCLA">
+            
+            <!-- Define content for search engine : max 1000char -->
+        <meta name="keywords" content= "description of data">
+           
+            <!-- Define how search engine should indes content -->
+        <meta name="robots" content="index,follow">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+         <!-- icon -->
+        <link rel= "icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        
+            <!-- CSS LINKS -->
+        
+        <link rel= "stylesheet" href= "stylesheet-test.css">
+         </head>
+        
+        <body>
+        <!-- Form with all current inputs -->
+
+<form class="example-form">
+    <!-- Field Legend -->
+    <fieldset class="fieldset">
+       <div class="content">
+        <!-- Text Input -->
+        <h1 class= "title">SIGN UP FOR MORE INFORMATION</h1>
+        <div class="text full-width">
+            <label class="text__label" for="example_textinput">Email</label>
+            <br>
+            <input class="text__input" type="text" name="example_textinput" placeholder="joebruin@ucla.edu">
+            <!--<span class="text__error">Error message is hidden</span> -->
+        </div>
+        
+        <div class="text full-width">
+            <label class="text__label" for="example_textinput">First Name</label>
+            <br>
+            <input class="text__input" type="text" name="example_textinput" placeholder="Joe">
+        </div>
+        
+        <div class="text full-width">
+            <label class="text__label" for="example_textinput">Last Name</label>
+            <br>
+            <input class="text__input" type="text" name="example_textinput" placeholder="Bruin">
+        </div>
+                       <button class="btn btn--lightbg">Sign up</button>
+        
+        <!-- Radio Input -->
+        <!-- 
+        <div class="radio">
+            <input class="radio__input" type="radio" name="radio" value="radio1">
+            <label class="radio__label" for="">Undergraduate Program</label>
+            <input class="radio__input" type="radio" name="radio" value="radio2">
+            <label class="radio__label" for="">Graduate Program</label>
+        </div> -->
+         <!-- Checkbox -->
+        <br>
+        <div class="checkbox">
+            <input type="checkbox" class="checkbox__input" name="example_checkbox" />
+            <label class="checkbox__label" for="example_checkbox">Undergraduate Program</label>
+            <input type="checkbox" class="checkbox__input" name="example_checkbox" />
+            <label class="checkbox__label" for="example_checkbox">Graduate Program</label>
+        </div>
+        <!-- Select Menu -->
+       
+        <div class="select full-width">
+            
+            <select class="select__menu" name="example_selection">
+        <option class="select__placeholder" disabled selected>Select program</option>
+        <option class="select__option" value="Epsum">Program 1</option>
+        <option class="select__option" value="Pro">Program 2</option>
+        <option class="select__option" value="Et">Program 3</option>
+        <option class="select__option" value="Ad">Program 4</option>
+      </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <span class="select__help">You may unsubscribe at anytime. You can refer to our Terms of Use for more information on how we store and protect your data.</span>
+            <br>
+            <br>
+            <!--<span class="select__error">Error message is hidden</span> -->
+        </div>
+       
+           </div>
+    </fieldset>
+</form>
+
+<script>
+    $(document).ready(function() {
+        // Example Error Handling
+        $(".example-form").submit(function(e) {
+            e.preventDefault();
+            // call UCLA Script Library function to clear previous error messages
+            // BE SURE TO PASS IN THE FORM (this)
+            clearErrors(this);
+            // Example error returned from server
+            var jsonReturned = {
+                "errors": [{
+                    "example_textinput": "Error message here"
+                }, {
+                    "example_selection": "This is not a valid selection"
+                }]
+            };
+            var errorsArr = jsonReturned.errors;
+            // Example parsing of JSON data
+            if (errorsArr.length) {
+                for (var i = 0; i < errorsArr.length; i++) {
+                    for (key in errorsArr[i]) {
+                        var inputFieldName = key;
+                        var inputErrorMessage = errorsArr[i][key];
+                        // call UCLA Script Library function to update error message and show error message
+                        triggerError(inputFieldName, inputErrorMessage);
+                    }
+                }
+            }
+        })
+    })
+</script>
+        </body>
