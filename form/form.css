@@ -1,0 +1,94 @@
+
+
+.fieldset{
+      width: 100%;
+	background-color: #005587;
+    font-family: "Helvetica", "Arial", sans-serif;
+      color: #FFFFFF;
+      font-size: 1rem;
+      font-weight: bold;
+    border: none;
+    
+	
+}
+.title{
+   font-size: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.content
+{
+    max-width: 80%;
+    margin-left: 20%;
+    
+}
+
+.text 
+{
+	float:left;
+    margin-right: 20px;
+
+}
+
+.checkbox{
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.checkbox__label{
+    margin-right: 80px; 
+    
+}
+.text__label{
+      font-size: 1rem;
+      font-weight: bold;}
+
+.text__input{
+	color: #E5E5E5;
+    font-size: 1rem;
+}
+
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #003B5C;
+}
+.btn--lightbg {
+	background-color: #FFD100;
+	color: #005587;
+    
+  border: none;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+   margin-bottom: 2rem;
+    margin-top:1rem;
+}
+    
+.select__help{
+   
+	font-weight: normal;
+    font-size: 0.8rem;  
+  
+}
+
+
+/* The container must be positioned relative: */
+select {
+  position: relative;
+ float:left;
+  width: 200px;
+ background-color: #003B5C;
+ color: white;
+ font-size: 1rem;
+ border: none;
+height: 2rem;
+    font-weight: bold;
+}
